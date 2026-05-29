@@ -25,8 +25,8 @@ export function promptRequired(message, currentValue = "") {
     if (!value || value.trim() === "") {
 
         alert("This field must be filled");
-        error("[Error]: this field must be filled");
-
+        console.error("[ERROR]: this field must be filled");
+        
         return null;
     }
     return value;
